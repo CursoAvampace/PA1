@@ -35,6 +35,22 @@ body {
   position: relative;
   z-index: 1;
 }
+/* Título con fondo de degradado pastel arcoíris, animado y efecto 3D */
+#mainTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  padding: 20px;
+  color: #fff; /* Color de letra para contrastar con el fondo */
+  background: linear-gradient(45deg, #FF9AA2, #FFB347, #FFFF99, #77DD77, #AEC6CF, #CFC0FF);
+  background-size: 200% 200%;
+  animation: gradientAnimation 5s ease infinite;
+  border-radius: 10px;
+  /* Efecto 3D: sombra exterior y sombra en el texto */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin: 10px 0;
+}
+
 
 /* ---------------- LÍNEA ANIMADA ---------------- */
 .animated-line {
