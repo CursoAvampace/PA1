@@ -2,200 +2,186 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tarea 4 </title>
-  
-  <!-- CSS -->
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
-  
-  <!-- Iconos & Tipografía -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-  
-  <!-- GSAP -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TAREA U.D. 4 – Actividades de Primeros Auxilios </title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Fuente personalizada -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <!-- CSS personalizado -->
+  <link rel="stylesheet" href="assets/css/style.css"
 </head>
 <body>
-  
-  <!-- HEADER -->
-  <header class="header">
-    <div class="container">
-      <h1 class="logo">Técnicas de Primeros Auxilios</h1>
-      <nav>
-        <ul class="menu">
-          <li><a href="#cases">Casos Prácticos</a></li>
-          <li><a href="#faq">Preguntas Frecuentes</a></li>
-        </ul>
-      </nav>
+  <div class="container">
+    <!-- Encabezado -->
+    <header class="text-center header">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR84MxUuXk_R6PclMGjErzEsblxU4wnmmpfKQ&s" alt="Cruz de Primeros Auxilios" class="header-icon">
+      <!-- Título con efecto arcoíris y 3D (se aplica a través del CSS) -->
+      <h1 id="mainTitle">TAREA 4 – Actividades de Primeros Auxilios </h1>
+      <p><strong>Autor/a:</strong> Ana Maria da Cunha Goncalves</p>
+      <p><strong>Curso:</strong> Técnico Educación Infantil - Primeros Auxilios - Curso 2024/2025</p>
+    </header>
+	
+	<!-- Línea animada -->
+    <div class="animated-line"></div>
+    
+    <!-- ACTIVIDAD 1 -->
+    <div class="accordion mb-4" id="accordionActividad1">
+      <div class="accordion-item situation-card">
+        <h2 class="accordion-header" id="headingA1">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseA1" aria-expanded="true" aria-controls="collapseA1">
+            <img src="https://img.icons8.com/color/48/000000/pill.png" alt="Icono Medicación" class="case-icon">
+            Actividad 1  – Caso Práctico: Medicación Errónea
+          </button>
+        </h2>
+        <div id="collapseA1" class="accordion-collapse collapse show" aria-labelledby="headingA1" data-bs-parent="#accordionActividad1">
+          <div class="accordion-body">
+            <p><strong>Caso práctico:</strong> Ángela visita a su amiga María, quien padece depresión e hipertensión. Resulta que, por error, María se tomó el doble de dosis de tranquilizantes, pensando que eran sus pastillas para la hipertensión. Ángela llega 20 minutos después de la ingesta.</p>
+            <p><strong>Pregunta:</strong> ¿Crees conveniente intentar provocar el vómito? Justifica tu respuesta.</p>
+            <hr>
+            <h5>Respuesta:</h5>
+            <p>Personalmente, no recomendaría provocar el vómito. Considero que, al pasar 20 minutos, la sustancia ya ha comenzado a absorberse y, además, al tratarse de tranquilizantes, existe un alto riesgo de que María esté sedada, lo que impide que proteja adecuadamente sus vías respiratorias. Esto podría provocar que, al inducir el vómito, se aspire contenido y empeore su situación. Por ello, lo más adecuado es llamar urgentemente al centro de toxicología y trasladarla a un hospital para que un equipo médico le evalúe y le brinde el tratamiento adecuado.</p>
+            <!-- Video de la Actividad 1 -->
+            <div class="video-container">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/Dy1pXtvB4HQ" title="Sobredosis de medicamentos, ¿qué hacer?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </header>
-
-  <!-- HERO SECTION -->
-  <section class="hero">
-    <div class="container">
-      <h2 id="hero-title">Tarea 4 <span class="highlight" </span></h2>
-      <p>Ana Maria da Cunha Goncalves.</p>
-	  <p>Curso 2024/2025</p>
-	  <p>IES AVEMPACE.</p>
-      <a href="#cases" class="btn">Ver Casos</a>
-      <button id="openModalBtn" class="btn">Ver Tarea</button> <!-- Botón para abrir el modal -->
+    
+    <!-- ACTIVIDAD 2 -->
+    <div class="accordion mb-4" id="accordionActividad2">
+      <div class="accordion-item situation-card">
+        <h2 class="accordion-header" id="headingA2">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseA2" aria-expanded="false" aria-controls="collapseA2">
+            <img src="https://img.icons8.com/color/48/000000/ambulance.png" alt="Icono Movilización" class="case-icon">
+            Actividad 2  – Técnicas de Movilización y Cuidados de la Columna Vertebral
+          </button>
+        </h2>
+        <div id="collapseA2" class="accordion-collapse collapse" aria-labelledby="headingA2" data-bs-parent="#accordionActividad2">
+          <div class="accordion-body">
+            <h5>a) Selección de la técnica de movilización</h5>
+            <ol>
+              <li>
+                <strong>Caso 1:</strong> Una conductora se encuentra inconsciente y sin signos de respiración dentro de un coche tras una colisión múltiple.<br>
+                <em>Técnica que usaría:</em> <strong>Maniobra de Rautek</strong>, ya que permite extraer a la víctima de forma segura, protegiendo especialmente la columna vertebral.
+              </li>
+              <li>
+                <strong>Caso 2:</strong> Un hombre inconsciente, de aproximadamente 80 kg, necesita ser retirado de una habitación donde su vida está en riesgo.<br>
+                <em>Técnica que usaría:</em> <strong>Arrastre por las axilas</strong>, pues es un método eficaz para mover a un paciente inconsciente, minimizando movimientos bruscos y protegiendo su integridad, incluso cuando se cuenta solo con un socorrista.
+              </li>
+            </ol>
+            <hr>
+            <h5>b) Preguntas adicionales</h5>
+            <ol>
+              <li>
+                <strong>Consecuencia grave en el Caso 1:</strong> Si no se moviliza correctamente, la conductora podría sufrir una lesión muy seria en la columna vertebral, lo que podría derivar en daño medular permanente, inclusive parálisis o problemas neurológicos irreversibles.
+              </li>
+              <li>
+                <strong>Acciones clave para proteger la columna:</strong>
+                <ul>
+                  <li>Alinear el eje cabeza-cuello-tronco para evitar rotaciones o flexiones bruscas.</li>
+                  <li>Inmovilizar el cuello, por ejemplo, utilizando ambas manos o un collarín.</li>
+                  <li>Movilizar de forma coordinada y con instrucciones claras para evitar sacudidas.</li>
+                </ul>
+              </li>
+            </ol>
+            <!-- Video de la Actividad 2 -->
+            <div class="video-container">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/xcOKnMEDtSA" title="Maniobra de Rautek - Primeros Auxilios" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </section>
-
-  <!-- MODAL -->
-  <div id="taskModal" class="modal">
-    <div class="modal-content">
-      <span class="close">×</span>
-      <h3>TAREA U.D. 4</h3>
-      <p><strong>ACTIVIDAD 1 (1 punto)</strong></p>
-      <p><strong>Caso práctico:</strong> Ángela acude cada día a visitar a su amiga que está con depresión y además tiene hipertensión.
-      Al llegar a su casa, su amiga María le cuenta que se ha equivocado de pastillas, y que se ha
-      tomado el doble de dosis de tranquilizantes, pensando que eran las pastillas de la hipertensión.
-      Ángela ha llegado a la casa de María 20 minutos después de que ésta haya tomado la
-      medicación.</p>
-      <p><strong>(1 punto) ¿Crees conveniente que intenten provocar el vómito? Justifica tu respuesta.</strong></p>
-
-      <p><strong>ACTIVIDAD 2 (4 puntos)</strong></p>
-      <p>a) Elige la técnica de movilización más indicada (escribe el nombre) en cada uno de los casos
-      siguientes, teniendo en cuenta que hay un socorrista.</p>
-      <ol>
-        <li>Una conductora inconsciente sin signos de respiración que está dentro de un coche, después
-        de una colisión múltiple.</li>
-        <li>Un hombre inconsciente, de unos 80 kg de peso, al que hay que sacar de una habitación, pues
-        su vida corre peligro.</li>
-      </ol>
-      <p>b) Responde las siguientes preguntas:</p>
-      <ol>
-        <li>En el caso a.1) conductora dentro de un coche, ¿Qué consequencia grave podría sufrir la
-        víctima si no se realiza la técnica de movilización correcta?</li>
-        <li>Cuando hay que movilizar a una víctima de accidente de tráfico porque su vida corre peligro,
-        se debe tener especial cuidado con la columna vertebral.
-        Escribe tres actuaciones básicas que se tienen que realizar para no agravar las lesiones en la
-        columna vertebral.</li>
-      </ol>
-
-      <p><strong>ACTIVIDAD 3 (2 puntos)</strong></p>
-      <p>Indica las actuaciones erróneas y corrígelas en el siguiente caso. Además, indica si falta algún
-      auxilio por hacer:</p>
-      <p>Un perro callejero muerde a un niño en la mano. El padre lleva el niño a casa, le lava la herida
-      con agua y jabón, y después se quedan en casa descansando.</p>
-      <p><strong>Incorrecto:</strong></p>
-      <p><strong>Correcto:</strong></p>
-      <p><strong>Falta por hacer:</strong></p>
-
-      <p><strong>ACTIVIDAD 4 (3 puntos)</strong></p>
-      <p>a) Lee detenidamente los siguientes casos e indica qué mecanismo de defensa de la personalidad
-      se está desarrollando.</p>
-      <ul>
-        <li>Caso 1: Arturo ha sido diagnosticado con cáncer de próstata, y piensa en que no es
-        extraño, ya que casi un 20 % de los hombres a su edad lo tienen. "Estadísticamente era
-        probable padecerlo".</li>
-        <li>Caso 2: Laura ha tenido un accidente de coche, ha dado por detrás a otro vehículo que
-        ha frenado. Laura dice que el coche iba despacio y ha frenado de repente.</li>
-      </ul>
-      <p>b) Dí dos técnicas básicas de ayuda psicológica para mejorar el estado emocional de Laura</p>
+    
+    <!-- ACTIVIDAD 3 -->
+    <div class="accordion mb-4" id="accordionActividad3">
+      <div class="accordion-item situation-card">
+        <h2 class="accordion-header" id="headingA3">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseA3" aria-expanded="false" aria-controls="collapseA3">
+            <img src="https://img.icons8.com/color/48/000000/dog.png" alt="Icono Mordedura" class="case-icon">
+            Actividad 3  – Actuaciones en Caso de Mordedura de Perro
+          </button>
+        </h2>
+        <div id="collapseA3" class="accordion-collapse collapse" aria-labelledby="headingA3" data-bs-parent="#accordionActividad3">
+          <div class="accordion-body">
+            <p><strong>Caso:</strong> Un perro callejero muerde la mano de un niño. El padre lo lleva a casa, le lava la herida con agua y jabón y deciden quedarse en casa descansando.</p>
+            <hr>
+            <h5>Análisis:</h5>
+            <p><strong>Lo que se hizo mal:</strong> Limitarse únicamente a lavar la herida con agua y jabón y quedarse en casa.</p>
+            <p><strong>Lo que debería hacerse:</strong> Además de lavar la herida, se debe desinfectar (por ejemplo, usando povidona yodada), aplicar un vendaje estéril y, muy importante, llevar al niño a un centro médico cuanto antes para evaluar la situación. Esto permitirá determinar si es necesaria la profilaxis antirrábica, la actualización de la vacunación antitetánica y, en algunos casos, iniciar un tratamiento con antibióticos.</p>
+            <p><strong>Lo que falta:</strong> Acudir a un profesional de la salud para confirmar si se requiere alguna medida adicional y realizar un seguimiento adecuado de la herida.</p>
+            <!-- Video de la Actividad 3 -->
+            <div class="video-container">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/odT3h1fCnJU?start=140" title="¿Cómo debemos reaccionar ante una mordedura de perro?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+    
+    <!-- ACTIVIDAD 4 -->
+    <div class="accordion mb-4" id="accordionActividad4">
+      <div class="accordion-item situation-card">
+        <h2 class="accordion-header" id="headingA4">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseA4" aria-expanded="false" aria-controls="collapseA4">
+            <img src="https://img.icons8.com/color/48/000000/brain.png" alt="Icono Psicología" class="case-icon">
+            Actividad 4 – Mecanismos de Defensa y Técnicas de Ayuda Psicológica
+          </button>
+        </h2>
+        <div id="collapseA4" class="accordion-collapse collapse" aria-labelledby="headingA4" data-bs-parent="#accordionActividad4">
+          <div class="accordion-body">
+            <h5>a) Identificación de mecanismos de defensa</h5>
+            <ol>
+              <li>
+                <strong>Caso 1:</strong> Arturo, diagnosticado con cáncer de próstata, comenta que “estadísticamente era probable padecerlo”.<br>
+                <em>Interpretación:</em> Está usando <strong>racionalización</strong> para darle un sentido lógico a la situación y disminuir el impacto emocional.
+              </li>
+              <li>
+                <strong>Caso 2:</strong> Laura, después de un accidente de coche, afirma que “el coche iba despacio y el otro frenó de repente”.<br>
+                <em>Interpretación:</em> Está utilizando <strong>proyección</strong>, trasladando la responsabilidad a factores externos para evitar asumirla.
+              </li>
+            </ol>
+            <hr>
+            <h5>b) Técnicas básicas de apoyo psicológico</h5>
+            <p>Para mejorar el estado de Laura se proponen dos técnicas:</p>
+            <ul>
+              <li><strong>Escucha activa y empatía:</strong> Permitir que se exprese sin ser juzgada, validando sus sentimientos y ayudándola a aliviar la ansiedad.</li>
+              <li><strong>Contención emocional y apoyo verbal:</strong> Ofrecer palabras de aliento y apoyo para ayudarla a reorganizar sus pensamientos y manejar el estrés derivado del accidente.</li>
+            </ul>
+            <!-- Video de la Actividad 4 -->
+            <div class="video-container">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/bgS1zE9FpcQ" title="PRIMEROS AUXILIOS PSICOLÓGICOS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Pie de Página -->
+    <footer class="text-center">
+      <!-- Se muestra la fecha actual en el pie de página -->
+      <p id="currentDate"></p>
+      <p>
+        <small>
+          Fuentes: 
+          <a href="https://www.mayoclinic.org" target="_blank">Mayo Clinic</a>, 
+          <a href="https://www.webmd.com" target="_blank">WebMD</a>, 
+          <a href="https://es.wikipedia.org" target="_blank">Wikipedia</a>, 
+          <a href="https://icons8.com" target="_blank">Icons8</a> y recursos del Ministerio de Salud y material curricular.
+        </small>
+      </p>
+      <img src="https://th.bing.com/th?id=ODLS.d81ac856-8552-4db3-8fce-2fffac5e54b7&w=32&h=32&qlt=90&pcl=fffffc&o=6&pid=1.2" alt="Logo" class="footer-logo">
+    </footer>
   </div>
-
-  <!-- CASOS PRÁCTICOS -->
-  <section id="cases" class="cases">
-    <!-- Se usa container-fluid para ocupar todo el ancho -->
-    <div class="container-fluid" id="cases-container">
-      <h2>Casos Prácticos</h2>
-
-      <!-- CASO 1 -->
-      <div class="case">
-        <h3 onclick="toggleCase(this.parentNode)">💊 Caso 1: Sobredosis Accidental</h3>
-        <div class="content">
-          <p><strong>Descripción:</strong> Ángela visita a su amiga María, quien padece depresión e hipertensión. Por error, María se tomó el doble de dosis de tranquilizantes.</p>
-          <p><strong>Pregunta:</strong> ¿Crees conveniente intentar provocar el vómito?</p>
-          <p><strong>Respuesta:</strong> No se recomienda inducir el vómito, ya que la sustancia podría haberse absorbido y hay riesgo de aspiración pulmonar.</p>
-          <iframe src="https://www.youtube.com/embed/uP6Cg2zxB7o" allowfullscreen></iframe>
-        </div>
-      </div>
-
-      <!-- CASO 2 -->
-      <div class="case">
-        <h3 onclick="toggleCase(this.parentNode)">🚗 Caso 2: Accidente de Tráfico</h3>
-        <div class="content">
-          <p><strong>Descripción:</strong> Una conductora está inconsciente dentro de un coche tras una colisión múltiple.</p>
-          <p><strong>Técnica recomendada:</strong> Maniobra de Rautek</p>
-          <p><strong>Justificación:</strong> Es la mejor técnica para extraer a la víctima sin comprometer la columna.</p>
-          <iframe src="https://www.youtube.com/embed/xcOKnMEDtSA" allowfullscreen></iframe>
-        </div>
-      </div>
-
-      <!-- CASO 3 -->
-      <div class="case">
-        <h3 onclick="toggleCase(this.parentNode)">🐶 Caso 3: Mordedura de Perro</h3>
-        <div class="content">
-          <p><strong>Descripción:</strong> Un perro callejero muerde la mano de un niño, y los padres solo lavan la herida sin acudir al médico.</p>
-          <p><strong>Acción correcta:</strong> Desinfectar, aplicar un vendaje estéril y acudir al centro médico.</p>
-          <iframe src="https://www.youtube.com/embed/l4Qg5c6T-KI" allowfullscreen></iframe>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PREGUNTAS FRECUENTES -->
-  <section id="faq" class="faq">
-    <div class="container">
-      <h2>Preguntas Frecuentes</h2>
-
-      <div class="faq-item">
-        <h3>¿Por qué no inducir el vómito en una sobredosis de tranquilizantes?</h3>
-        <p>Inducir el vómito en una persona que ha ingerido tranquilizantes puede ser extremadamente peligroso, ya que puede causar aspiración pulmonar.</p>
-      </div>
-
-      <div class="faq-item">
-        <h3>¿Qué es la Maniobra de Rautek?</h3>
-        <p>Es una técnica para extraer a una persona de un vehículo sin comprometer su columna vertebral.</p>
-      </div>
-    </div>
-  </section>
-
-    <!-- PIE DE PÁGINA -->
-  <footer>
-    <div class="logos">
-      <img src="https://github.com/CursoAvampace/APSI/blob/main/logo%20instituto.png?raw=true" alt="Logo Avempace">
-      <div class="red-cross"></div>
-    </div>
-    <p class="author">Autor: Ana Maria da Cunha Goncalves</p>
-    <p class="sources">Fuentes: Material Curricular, Videos Youtube</p>
-  </footer>
-
-  <!-- JS -->
-  <script src="assets/js/script.js"></script>
+  
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script>
-    //<![CDATA[
-      //Script para el modal
-      var modal = document.getElementById("taskModal");
-      var btn = document.getElementById("openModalBtn");
-      var span = document.getElementsByClassName("close")[0];
-
-      btn.onclick = function() {
-        modal.style.display = "block";
-      }
-
-      span.onclick = function() {
-        modal.style.display = "none";
-      }
-
-      window.onclick = function(event) {
-        if (event.target == modal) {
-          modal.style.display = "none";
-        }
-      }
-      //]]>
-
-      //<![CDATA[
-      // Función para el efecto persiana
-      function toggleCase(element) {
-        element.classList.toggle('collapsed');
-      }
-
-    //]]>
+    // Actualizar la fecha actual en el pie de página
+    document.getElementById('currentDate').textContent = new Date().toLocaleDateString();
   </script>
 </body>
 </html>
