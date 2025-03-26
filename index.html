@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tarea 4 </title>
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+  
+  <!-- Iconos & Tipografía -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+  
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">Técnicas de Primeros Auxilios</h1>
+      <nav>
+        <ul class="menu">
+          <li><a href="#cases">Casos Prácticos</a></li>
+          <li><a href="#faq">Preguntas Frecuentes</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="container">
+      <h2 id="hero-title">Tarea 4 <span class="highlight" </span></h2>
+      <p>Ana Maria da Cunha Goncalves.</p>
+	  <p>Curso 2024/2025</p>
+	  <p>IES AVEMPACE.</p>
+      <a href="#cases" class="btn">Ver Casos</a>
+      <button id="openModalBtn" class="btn">Ver Tarea</button> <!-- Botón para abrir el modal -->
+    </div>
+  </section>
+
+  <!-- MODAL -->
+  <div id="taskModal" class="modal">
+    <div class="modal-content">
+      <span class="close">×</span>
+      <h3>TAREA U.D. 4</h3>
+      <p><strong>ACTIVIDAD 1 (1 punto)</strong></p>
+      <p><strong>Caso práctico:</strong> Ángela acude cada día a visitar a su amiga que está con depresión y además tiene hipertensión.
+      Al llegar a su casa, su amiga María le cuenta que se ha equivocado de pastillas, y que se ha
+      tomado el doble de dosis de tranquilizantes, pensando que eran las pastillas de la hipertensión.
+      Ángela ha llegado a la casa de María 20 minutos después de que ésta haya tomado la
+      medicación.</p>
+      <p><strong>(1 punto) ¿Crees conveniente que intenten provocar el vómito? Justifica tu respuesta.</strong></p>
+
+      <p><strong>ACTIVIDAD 2 (4 puntos)</strong></p>
+      <p>a) Elige la técnica de movilización más indicada (escribe el nombre) en cada uno de los casos
+      siguientes, teniendo en cuenta que hay un socorrista.</p>
+      <ol>
+        <li>Una conductora inconsciente sin signos de respiración que está dentro de un coche, después
+        de una colisión múltiple.</li>
+        <li>Un hombre inconsciente, de unos 80 kg de peso, al que hay que sacar de una habitación, pues
+        su vida corre peligro.</li>
+      </ol>
+      <p>b) Responde las siguientes preguntas:</p>
+      <ol>
+        <li>En el caso a.1) conductora dentro de un coche, ¿Qué consequencia grave podría sufrir la
+        víctima si no se realiza la técnica de movilización correcta?</li>
+        <li>Cuando hay que movilizar a una víctima de accidente de tráfico porque su vida corre peligro,
+        se debe tener especial cuidado con la columna vertebral.
+        Escribe tres actuaciones básicas que se tienen que realizar para no agravar las lesiones en la
+        columna vertebral.</li>
+      </ol>
+
+      <p><strong>ACTIVIDAD 3 (2 puntos)</strong></p>
+      <p>Indica las actuaciones erróneas y corrígelas en el siguiente caso. Además, indica si falta algún
+      auxilio por hacer:</p>
+      <p>Un perro callejero muerde a un niño en la mano. El padre lleva el niño a casa, le lava la herida
+      con agua y jabón, y después se quedan en casa descansando.</p>
+      <p><strong>Incorrecto:</strong></p>
+      <p><strong>Correcto:</strong></p>
+      <p><strong>Falta por hacer:</strong></p>
+
+      <p><strong>ACTIVIDAD 4 (3 puntos)</strong></p>
+      <p>a) Lee detenidamente los siguientes casos e indica qué mecanismo de defensa de la personalidad
+      se está desarrollando.</p>
+      <ul>
+        <li>Caso 1: Arturo ha sido diagnosticado con cáncer de próstata, y piensa en que no es
+        extraño, ya que casi un 20 % de los hombres a su edad lo tienen. "Estadísticamente era
+        probable padecerlo".</li>
+        <li>Caso 2: Laura ha tenido un accidente de coche, ha dado por detrás a otro vehículo que
+        ha frenado. Laura dice que el coche iba despacio y ha frenado de repente.</li>
+      </ul>
+      <p>b) Dí dos técnicas básicas de ayuda psicológica para mejorar el estado emocional de Laura</p>
+    </div>
+  </div>
+
+  <!-- CASOS PRÁCTICOS -->
+  <section id="cases" class="cases">
+    <!-- Se usa container-fluid para ocupar todo el ancho -->
+    <div class="container-fluid" id="cases-container">
+      <h2>Casos Prácticos</h2>
+
+      <!-- CASO 1 -->
+      <div class="case">
+        <h3 onclick="toggleCase(this.parentNode)">💊 Caso 1: Sobredosis Accidental</h3>
+        <div class="content">
+          <p><strong>Descripción:</strong> Ángela visita a su amiga María, quien padece depresión e hipertensión. Por error, María se tomó el doble de dosis de tranquilizantes.</p>
+          <p><strong>Pregunta:</strong> ¿Crees conveniente intentar provocar el vómito?</p>
+          <p><strong>Respuesta:</strong> No se recomienda inducir el vómito, ya que la sustancia podría haberse absorbido y hay riesgo de aspiración pulmonar.</p>
+          <iframe src="https://www.youtube.com/embed/uP6Cg2zxB7o" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <!-- CASO 2 -->
+      <div class="case">
+        <h3 onclick="toggleCase(this.parentNode)">🚗 Caso 2: Accidente de Tráfico</h3>
+        <div class="content">
+          <p><strong>Descripción:</strong> Una conductora está inconsciente dentro de un coche tras una colisión múltiple.</p>
+          <p><strong>Técnica recomendada:</strong> Maniobra de Rautek</p>
+          <p><strong>Justificación:</strong> Es la mejor técnica para extraer a la víctima sin comprometer la columna.</p>
+          <iframe src="https://www.youtube.com/embed/xcOKnMEDtSA" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <!-- CASO 3 -->
+      <div class="case">
+        <h3 onclick="toggleCase(this.parentNode)">🐶 Caso 3: Mordedura de Perro</h3>
+        <div class="content">
+          <p><strong>Descripción:</strong> Un perro callejero muerde la mano de un niño, y los padres solo lavan la herida sin acudir al médico.</p>
+          <p><strong>Acción correcta:</strong> Desinfectar, aplicar un vendaje estéril y acudir al centro médico.</p>
+          <iframe src="https://www.youtube.com/embed/l4Qg5c6T-KI" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PREGUNTAS FRECUENTES -->
+  <section id="faq" class="faq">
+    <div class="container">
+      <h2>Preguntas Frecuentes</h2>
+
+      <div class="faq-item">
+        <h3>¿Por qué no inducir el vómito en una sobredosis de tranquilizantes?</h3>
+        <p>Inducir el vómito en una persona que ha ingerido tranquilizantes puede ser extremadamente peligroso, ya que puede causar aspiración pulmonar.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>¿Qué es la Maniobra de Rautek?</h3>
+        <p>Es una técnica para extraer a una persona de un vehículo sin comprometer su columna vertebral.</p>
+      </div>
+    </div>
+  </section>
+
+    <!-- PIE DE PÁGINA -->
+  <footer>
+    <div class="logos">
+      <img src="https://github.com/CursoAvampace/APSI/blob/main/logo%20instituto.png?raw=true" alt="Logo Avempace">
+      <div class="red-cross"></div>
+    </div>
+    <p class="author">Autor: Ana Maria da Cunha Goncalves</p>
+    <p class="sources">Fuentes: Material Curricular, Videos Youtube</p>
+  </footer>
+
+  <!-- JS -->
+  <script src="assets/js/script.js"></script>
+  <script>
+    //<![CDATA[
+      //Script para el modal
+      var modal = document.getElementById("taskModal");
+      var btn = document.getElementById("openModalBtn");
+      var span = document.getElementsByClassName("close")[0];
+
+      btn.onclick = function() {
+        modal.style.display = "block";
+      }
+
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+      //]]>
+
+      //<![CDATA[
+      // Función para el efecto persiana
+      function toggleCase(element) {
+        element.classList.toggle('collapsed');
+      }
+
+    //]]>
+  </script>
+</body>
+</html>
